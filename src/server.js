@@ -12,7 +12,7 @@ const io = require('socket.io')(server);
 
 io.on('connection', socket => {
   console.log('Ok');
-  socket.on('connectRom', box =>{
+  socket.on('connectRoom', box =>{
     socket.join(box);
   })
   
